@@ -26,12 +26,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         /* |--------+--------+--------+--------+--------+-----------------+--------+--------+--------+--------+-----------------+--------+--------| */
              MO(2),  KC_LSFT, KC_Z,     KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, KC_UP,   KC_GRV,
         /* |--------+--------+--------+--------+--------+-----------------+--------+--------+--------+--------+-----------------+--------+--------| */
-        /* | MO 1   | LCTRL  | LCTRL  | LALT   | LGUI   | TO 3   | SPACE  | SPACE  | SPACE  | MO 4   | R Alt  |        | LEFT   | DOWN   | RIGHT  | */
+        /* | MO 1   | LCTRL  | LCTRL  | LALT   | LGUI   | TO 3   | SPACE  | SPACE  | SPACE  | MO 4   | R GUI  |        | LEFT   | DOWN   | RIGHT  | */
         /* |--------+--------+--------+--------+--------+-----------------+--------+--------+--------+--------+-----------------+--------+--------| */
-             MO(1),  KC_LCTL, KC_LCTL, KC_LALT, KC_LGUI,  TO(3),   KC_SPC,  KC_SPC,  KC_SPC,  MO(4),   KC_RALT, KC_NO,  KC_LEFT,  KC_DOWN, KC_RGHT
+             MO(1),  KC_LCTL, KC_LCTL, KC_LALT, KC_LGUI,  TO(3),   KC_SPC,  KC_SPC,  KC_SPC,  MO(4),   KC_RGUI, KC_NO,  KC_LEFT,  KC_DOWN, KC_RGHT
     ),
 
-
+          /*  RGB  and Backlight Controls */
 	[1] = LAYOUT_ortho_5x15(
         /* |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------| */
         /* |Mac Lock|        |        |        |        |        |        |        |        |        |        |        |        |        |        | */
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         /* |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------| */
              KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
     ),
-
+          /*  Number Pad */
 	[3] = LAYOUT_ortho_5x15(
         /* |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------| */
         /* |        |        |        |        |        |        |        |        |        |        |        |        |        |        |        | */
@@ -103,6 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TO(0),   KC_TRNS, KC_TRNS, KC_P0,   KC_P0,   KC_PDOT, KC_PEQL, KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
+          /*  Function keys and media controls */
 	[4] = LAYOUT_ortho_5x15(
         /* |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------| */
         /* |        |        |        |        |        |        |        |        |        |        |        |        |        |        |        | */
